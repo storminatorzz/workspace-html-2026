@@ -19,18 +19,97 @@
 	<div id="side"> </div>
 	<div class="practicearea">
 		<div class="practice">
-			<h2>August 26 practice</h2>
+			<h2 id="August_26_practice">August 26 practice</h2>
+			<ol>	<li>Inline elements</li>	<!--ul is unordered list-->
+					<ul>	<li>&lt;img&gt;</li>
+							<li>&lt;br&gt;</li>
+							<li>&lt;strong&gt;</li>
+					</ul>
+					<li>Block level elements</li>	<!--li is list element/item-->
+					<ul>	<li>&lt;ol&gt;</li>
+							<li>&lt;li&gt;</li>
+							<li>&lt;p&gt;</li>
+					</ul>
 			
+			</ol>
          
 		</div>
 
 
 		<div class="practice">
+			<h2>August 31 practice</h2>
+			<a href="https://www.google.com"> Text anchored to google link </a> 
+			
+			<a href="img/NYCpicture.jpg"> NYC Picture </a> 
+			<a href="#August_26_practice"> Aug. 26th practice </a> <!--internal link works on given ID tags, see aug 26th practice above for id= -->
+			<!-- required in-class exercise-->
+			 <p>Required exercise: </p>
+			<a href="blackboard.usca.edu"> Blackboard </a> 
+			<a href="doc/imageMap.html"> Image Map </a> 
+			
+			<p> Img <img src="img/facebook.png" alt="Facebook Logo">
+			</p>
 
+			<p>
+				Link w/ Image 
+				<a href="https://www.google.com"><img src="img/google.png" alt="Google Logo"></a>
+			</p>
+
+			<!--table-->
+			<table border="1">
+				<tr>
+					<td rowspan="2">1</td> <td>2</td> <td>3</td>
+				</tr>
+				<tr>
+					<td>4</td> <td>5</td> <td>6</td>
+				</tr>
+				<tr>
+					<td colspan="2">7</td> <td>8</td> <td>9</td> <!--note that colspan pushes other elements forward-->
+				</tr>
+				<tr>
+					<td>10</td> <td rowspan="2" colspan="3">11</td> <td>12</td>
+				</tr>
+				<tr>
+					<td>13</td> <td>14</td> <td>15</td>
+				</tr>
+			</table>
+			
 		</div>
-
-
+			
 		<div class="practice">
+<h2>Sept. 2nd practice</h2>
+			<table border="1">
+<tr><td colspan="4">Temperature distribution </td></tr>
+<tr><td>Month</td><td>High</td><td>Low</td><td>Avg</td></tr>				
+<tr><td>Jan</td><td>48</td><td>36</td><td>40</td></tr>
+<tr><td>Feb</td><td>49</td><td>37</td><td rowspan="2">43</td></tr>				
+<tr><td>Mar</td><td>52</td><td>39</td></tr>
+<tr><td>Apr</td><td>58</td><td>43</td><td>47</td></tr>				
+			</table>
+			<br>
+			
+			<!--forms-->
+			<form action="fake.php"> <!--action is value recipient, typically backend-->
+				<p>Username:<input type="text" name="username" size="30" maxlength="30"></p>
+				<p>Password:<input type="text" name="password" size="30" maxlength="30"></p>
+				<!--checkbox-->
+				<p>coolasf mech mwehuehue: 
+				<label> Nu Gundam<input type="checkbox" name="MS" value="Nu Gundam"> </label>
+				<label> Sazabi<input type="checkbox" name="MS" value="Sazabi"></label>
+				<label> Draig<input type="checkbox" name="MS" value="draig"></label>
+				</p>
+				<br>
+				<p> who winning though :eyes: :
+				<label> Nu Gundam<input type="radio" name="MSradio" value="Nu Gundam" checked> </label>
+				<label> Sazabi<input type="radio" name="MSradio" value="Sazabi"></label>
+				<label> Draig<input type="radio" name="MSradio" value="draig"></label>
+				</p>
+
+				<p>
+					<input type="reset" value="reset form">
+					<input type="submit" value="Submit for processing">
+				</p>
+			</form>
 
 
 		</div>
