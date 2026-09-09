@@ -77,14 +77,14 @@
 		</div>
 			
 		<div class="practice">
-<h2>Sept. 2nd practice</h2>
+			<h2>Sept. 2nd practice</h2>
 			<table border="1">
-<tr><td colspan="4">Temperature distribution </td></tr>
-<tr><td>Month</td><td>High</td><td>Low</td><td>Avg</td></tr>				
-<tr><td>Jan</td><td>48</td><td>36</td><td>40</td></tr>
-<tr><td>Feb</td><td>49</td><td>37</td><td rowspan="2">43</td></tr>				
-<tr><td>Mar</td><td>52</td><td>39</td></tr>
-<tr><td>Apr</td><td>58</td><td>43</td><td>47</td></tr>				
+				<tr><td colspan="4">Temperature distribution </td></tr>
+				<tr><td>Month</td><td>High</td><td>Low</td><td>Avg</td></tr>				
+				<tr><td>Jan</td><td>48</td><td>36</td><td>40</td></tr>
+				<tr><td>Feb</td><td>49</td><td>37</td><td rowspan="2">43</td></tr>				
+				<tr><td>Mar</td><td>52</td><td>39</td></tr>
+				<tr><td>Apr</td><td>58</td><td>43</td><td>47</td></tr>				
 			</table>
 			<br>
 			
@@ -115,10 +115,58 @@
 		</div>
 
 		<div class="practice">
+			<h2>Sept. 9 practice</h2>
+			<form action="sept9practice.php">
+				<Label> A:<input type="radio" name="multichoiceLetters1" value="a"></Label>
+				<label> B:<input type="radio" name="multichoiceLetters2" value="b"></Label>
+				<label> C:<input type="radio" name="multichoiceLetters1" value="c"></Label>
+				<label> D:<input type="radio" name="multichoiceLetters2" value="d"></Label>
+				<br>
+				<!--use placeholder -->
+				<textarea name="comment" id="" cols="30" rows="20" placeholder="enter comment here.">
+					
+				</textarea>
+				<br> 
+				select a color: 
+				<select size="1" name="color" id="color"> 
+					<option value="red">red</option>
+					<option value="orange">orange</option>
+					<option value="yellow">yellow</option>
+					<option value="green">green</option>
+					<option value="blue">blue</option>
+					<option value="purple">purple</option>
+				</select>
+				<br>
+				<p>
+					<button>
+						<img src="img/puppy.jpg" alt="puppy"> puppy.,,
+					</button>
+					<input type="hidden" name="default" value="1111">
+					<input type="button" name="nice" value="nice">
+				</p>
 
+				<input type="text" id="fn" name="fn" value="name">
+				<label for="fn">Enter your name</label>
+				<br>
+				
+				<p>html5 new features</p>
+				<p>
+					<input type="color" name="selectColor" autofocus>
+					<input type="date" name="selectDate">
+					<br>
+					*Email: (required)
+					<input type="email" placeholder="xxx@usca.edu" name="email" required>
+				</p>
+				<br>
+				<p> *phone number 
+					<input type="tel" name="phone" placeholder="xxx-xxx-xxxx" pattern="\d{3}-\d{3}-\d{4}">
 
+				</p>
+				<br>
+				<input type="submit" value="submit">
+			</form>
 		</div>
-
+		
 	</div>
 
 	<script type="text/javascript" src="index.js"></script>
